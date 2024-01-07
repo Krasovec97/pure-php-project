@@ -1,5 +1,6 @@
 <?php
 header("Content-Type: application/json");
+require 'connection.php';
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -62,18 +63,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    $servername = "localhost";
-    $username = "purephp";
-    $password = "secret";
-    $dbname = "pure_php_table";
-
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    $request = print_r($payload, TRUE);
+    file_put_contents('~/logs/requests_'.date('Ymd').'.log', $request, FILE_APPEND);
 
 
     $sql = "SELECT * FROM job_applications WHERE email = '$email'";

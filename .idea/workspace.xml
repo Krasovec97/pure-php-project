@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a51ef04b-5c85-45b8-9a38-f905030f8ec3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/create_user_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+    <list default="true" id="a51ef04b-5c85-45b8-9a38-f905030f8ec3" name="Changes" comment="Complete task">
+      <change afterPath="$PROJECT_DIR$/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +70,24 @@
       <option name="presentableId" value="Default" />
       <updated>1703148013177</updated>
       <workItem from="1703148014447" duration="7450000" />
-      <workItem from="1704623894495" duration="8412000" />
+      <workItem from="1704623894495" duration="9376000" />
     </task>
+    <task id="LOCAL-00001" summary="Complete task">
+      <option name="closed" value="true" />
+      <created>1704633001664</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704633001664</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Complete task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete task" />
   </component>
 </project>
