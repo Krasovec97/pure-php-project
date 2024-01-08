@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a51ef04b-5c85-45b8-9a38-f905030f8ec3" name="Changes" comment="Complete task">
-      <change afterPath="$PROJECT_DIR$/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/create_user_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/krasovec97x/Projects/pure-php-project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,6 +70,7 @@
       <updated>1703148013177</updated>
       <workItem from="1703148014447" duration="7450000" />
       <workItem from="1704623894495" duration="9376000" />
+      <workItem from="1704701645429" duration="1908000" />
     </task>
     <task id="LOCAL-00001" summary="Complete task">
       <option name="closed" value="true" />

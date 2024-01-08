@@ -1,12 +1,5 @@
 <?php
-$host = 'localhost';
-$dbname = 'pure_php_table';
-$user = 'purephp';
-$dbpass = 'secret';
-$conn = new mysqli ($host, $user, $dbpass, $dbname);
-if($conn=== false){
-    die("Error: Could not connect to the specified database to host : localhost" . $conn->connect_error);
-}
+include 'connection.php';
 $sql = "CREATE TABLE job_applications( \n"
     . "            id INT NOT NULL AUTO_INCREMENT, \n"
     . "            full_name VARCHAR(100) NOT NULL, \n"
