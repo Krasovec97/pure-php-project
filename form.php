@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $payload = json_decode(file_get_contents("php://input"), true);;
     $data = $payload;
 
-    // Validate forms
+    // Validate forms.php
     $name = $payload['name'];
     if (empty($name)) {
         $response = [
