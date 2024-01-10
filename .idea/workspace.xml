@@ -39,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/krasovec97x/Projects/pure-php-project",
+    "last_opened_file_path": "/var/www/html",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,6 +71,7 @@
       <workItem from="1703148014447" duration="7450000" />
       <workItem from="1704623894495" duration="9376000" />
       <workItem from="1704701645429" duration="1908000" />
+      <workItem from="1704891661877" duration="179000" />
     </task>
     <task id="LOCAL-00001" summary="Complete task">
       <option name="closed" value="true" />
