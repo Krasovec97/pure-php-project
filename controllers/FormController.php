@@ -6,11 +6,11 @@ class FormController
 {
     public function displayFormPage()
     {
-        echo file_get_contents(basePath('/views/form.php'));
+        return include basePath('/views/form.php');
     }
 
     public function displayFormListPage()
     {
-        echo file_get_contents(basePath('/views/forms.php'));
+        return include basePath('/views/forms.php');
     }
 }

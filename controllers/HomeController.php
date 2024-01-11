@@ -5,6 +5,6 @@ class HomeController {
 
     public function displayHomePage()
     {
-        echo file_get_contents(basePath('/views/home.php'));
+        return include basePath('/views/home.php');
     }
 }

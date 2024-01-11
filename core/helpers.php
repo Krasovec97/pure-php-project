@@ -1,20 +1,20 @@
 <?php
 
-function basePath($path) {
+function basePath(string $path) {
 
     return BASE_PATH . $path;
 }
 
-function abort($message, $code = 404) {
+function abort(string $message, int $code = 404) {
 
     http_response_code($code);
     echo $message;
     exit();
 }
 
-function dataGet($arr, $key) {
+function dataGet(array $routeArray, $key) {
 
-    if (!is_array($arr) || empty($key)) {
+    if (!is_array($routeArray) || empty($key)) {
         return null;
     }
 
@@ -23,9 +23,9 @@ function dataGet($arr, $key) {
 
     $i = 0;
 
-    if(array_key_exists($keysArr[$i], $arr)) {
+    if(array_key_exists($keysArr[$i], $routeArray)) {
 
-        $nextArr = $arr[$keysArr[$i]];
+        $nextArr = $routeArray[$keysArr[$i]];
 
         while($i < count($keysArr)) {
 

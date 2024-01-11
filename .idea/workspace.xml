@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a51ef04b-5c85-45b8-9a38-f905030f8ec3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/FormController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/forms.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/37e60d03-b9f8-434e-9c83-8bd3b3f1ed67.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/37e60d03-b9f8-434e-9c83-8bd3b3f1ed67.xml" afterDir="false" />
+    <list default="true" id="a51ef04b-5c85-45b8-9a38-f905030f8ec3" name="Changes" comment="Added custom routing to app">
+      <change afterPath="$PROJECT_DIR$/views/includes/head.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/router.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/FormController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/FormController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/forms.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/forms.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,30 +42,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/var/www/html/views",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/var/www/html/views&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/includes" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -94,7 +90,9 @@
       <workItem from="1704623894495" duration="9376000" />
       <workItem from="1704701645429" duration="1908000" />
       <workItem from="1704891661877" duration="285000" />
-      <workItem from="1704891951276" duration="5260000" />
+      <workItem from="1704891951276" duration="5414000" />
+      <workItem from="1704979759536" duration="4000" />
+      <workItem from="1704988935033" duration="3815000" />
     </task>
     <task id="LOCAL-00001" summary="Complete task">
       <option name="closed" value="true" />
@@ -104,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704633001664</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added custom routing to app">
+      <option name="closed" value="true" />
+      <created>1704897258278</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704897258278</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Complete task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete task" />
+    <MESSAGE value="Added custom routing to app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added custom routing to app" />
   </component>
 </project>
