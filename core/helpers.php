@@ -45,9 +45,11 @@ function dataGet(array $routeArray, $key) {
 function view($file, $vars) {
     ob_start();
     extract($vars);
-    include dirname(__DIR__) . '/views/' . $file . '.php';
+    include basePath('/views/' . $file . '.php');
     $buffer = ob_get_contents();
     echo $buffer;
     ob_end_clean();
+
+
     return $buffer;
 }

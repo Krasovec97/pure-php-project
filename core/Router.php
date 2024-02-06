@@ -41,7 +41,9 @@ class Router
 
         list($controller, $function) = $this->extractAction($action);
 
-        $this->routes[$method][$uri] = [
+        $pattern = "#^" . preg_replace('#\{[a-zA-Z0-9_]+}#', '([a-zA-Z0-9_]+)', $uri) . "$#";
+
+        $this->routes[$method][$pattern] = [
             'controller' => $controller,
             'method' => $function
         ];
@@ -59,26 +61,33 @@ class Router
 
     public function route(string $method, string $uri): bool {
 
-        $result = dataGet($this->routes, $method .".". $uri);
+        foreach ($this->routes[$method] as $pattern => $result) {
 
-        if(!$result) abort("Route not found", 404);
+            if(preg_match($pattern, $uri, $matches)) {
 
-        $controller = $result['controller'];
-        $function = $result['method'];
+                array_shift($matches);
 
-        if(class_exists($controller)) {
+                if(!$result) abort("Route not found", 404);
 
-            $controllerInstance = new $controller();
+                $controller = $result['controller'];
+                $function = $result['method'];
 
-            if(method_exists($controllerInstance, $function)) {
+                if(class_exists($controller)) {
 
-                $controllerInstance->$function();
-                return true;
+                    $controllerInstance = new $controller();
 
-            } else {
+                    if(method_exists($controllerInstance, $function)) {
 
-                abort("No method {$function} on class {$controller}", 500);
+                        $controllerInstance->$function($matches);
+                        return true;
+
+                    } else {
+
+                        abort("No method {$function} on class {$controller}", 500);
+                    }
+                }
             }
+
         }
 
         return false;

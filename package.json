@@ -1,0 +1,15 @@
+{
+  "name": "pure-php",
+  "description": "Simple php project to learn plain php",
+  "authors": [
+    {
+      "name": "Mitja Krašovec",
+      "email": "mitjakrasovec1@gmail.com"
+    }
+  ],
+  "require": {},
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}

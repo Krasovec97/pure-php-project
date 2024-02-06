@@ -7,10 +7,10 @@
         <a href="/"><img src="../public/audibook_logo.svg" id="logoImage" alt="audibook logo"></a>
     </div>
     <div>
-        <h1>Welcome to jobs!</h1>
-        <div>
-            <a href="/form">Apply to a job</a>
-            <a href="/forms">See all job applications</a>
+        <h1>Pozdravljeni!</h1>
+        <div class="mt-5">
+            <a class="btn btn-primary" href="/form">Prijava na delovno mesto</a>
+            <a class="btn btn-outline-primary ms-3" href="/applications">Oglejte si vse prijave</a>
         </div>
     </div>
 </div>
